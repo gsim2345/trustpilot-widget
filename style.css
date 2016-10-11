@@ -1,0 +1,24 @@
+.wrapper {
+  min-width: 300px;
+}
+
+#logo {
+  float: left;
+  width: 140px;
+}
+
+#rating {
+  max-width: 150px;
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+#reviews {
+  margin-top: 0px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  height:200px;
+  min-width: 300px;
+}
