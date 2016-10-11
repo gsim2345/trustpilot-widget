@@ -6,10 +6,10 @@ $(document).ready(function() {
       dataType: 'json',
     })
     .done(function(data) {
-      console.log(data[0].fullName);
+      console.log(data[0]);
         $('.collapsible').html('');
       data.forEach(function(i) {
-        $('.collapsible').append('<li><div class="collapsible-header"><i class="material-icons">filter_drama</i>' + i.fullName + '</div></li>');
+        $('.collapsible').append('<li><div class="collapsible-header"><i class="material-icons">filter_drama</i><p>' + i.fullName + '   -   <b>' + i.reviewTitle + '</b></p></div><div class="collapsible-body"><p>' + i.reviewBody + '</p></div></li>');
       });
 
     })
