@@ -1,20 +1,23 @@
 body {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
-
+/*
 .wrapper {
   min-width: 350px;
 }
 
 /* logo on top of widget */
 #logo {
+  max-width: 40%
+  height: auto;
   float: left;
-  width: 140px;
+  width: 40%;
 }
 
 /* rating stars on top of widget */
 #rating {
-  max-width: 150px;
+  max-width: 38%;
+  height: auto;
   float: right;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -26,7 +29,8 @@ body {
   overflow-y:scroll;
   overflow-x:hidden;
   height:200px;
-  min-width: 350px;
+  clear: both;
+  /*min-width: 350px;*/
 }
 
 /* review header  */
@@ -44,6 +48,8 @@ body {
 }
 
 .ratingStars {
-  max-height: 14px;
+  width: 30%;
+  height: auto;
   float: right;
+  padding-right: 3px;
 }
