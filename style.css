@@ -30,7 +30,6 @@ body {
   overflow-x:hidden;
   height:200px;
   clear: both;
-  /*min-width: 350px;*/
 }
 
 /* review header  */
@@ -40,11 +39,9 @@ body {
   padding: 0px;
 }
 
-/* review body  */
-.collapsible-body p {
-  font-size: 12px;
-  padding: 10px;
-  line-height: 140%;
+.userImage {
+  width: 99%;
+border-radius: 50%;
 }
 
 .ratingStars {
@@ -52,4 +49,11 @@ body {
   height: auto;
   float: right;
   padding-right: 3px;
+}
+
+/* review body  */
+.collapsible-body p {
+  font-size: 12px;
+  padding: 10px;
+  line-height: 140%;
 }
