@@ -7,14 +7,15 @@ var starRatingPics = ['1-star-260x48.png', '2-stars-260x48.png', '3-stars-260x48
       dataType: 'json',
     })
     .done(function(data) {
-
-      console.log(data[0]);
+      console.log(data);
         // In case of success, emty the list table first
         $('.collapsible').html('');
         // Add as much list element as many is in the json array.
         for (var i = 0; i<data.length; i++) {
-          console.log(starRatingPics[i]);
-          $('.collapsible').append('<li><div class="collapsible-header"><i class="material-icons">filter_drama</i><p>' + data[i].fullName + '<img  class="ratingStars" src="' + starRatingPics[i] + '"><br/>   <b>' + data[i].reviewTitle + '</b></p></div><div class="collapsible-body"><p>' + data[i].reviewBody + '</p></div></li>');
+
+          console.log(data[i].starRating);
+          var picIndex = data[i].starRating - 1;
+          $('.collapsible').append('<li><div class="collapsible-header"><i class="material-icons">filter_drama</i><p>' + data[i].fullName + '<img  class="ratingStars" src="' + starRatingPics[picIndex] + '"><br/>   <b>' + data[i].reviewTitle + '</b></p></div><div class="collapsible-body"><p>' + data[i].reviewBody + '</p></div></li>');
         }
 
 
