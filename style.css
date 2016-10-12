@@ -1,12 +1,18 @@
-.wrapper {
-  min-width: 300px;
+body {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+.wrapper {
+  min-width: 350px;
+}
+
+/* logo on top of widget */
 #logo {
   float: left;
   width: 140px;
 }
 
+/* rating stars on top of widget */
 #rating {
   max-width: 150px;
   float: right;
@@ -14,22 +20,30 @@
   margin-bottom: 10px;
 }
 
-
+/* div containing the reviews */
 #reviews {
   margin-top: 0px;
   overflow-y:scroll;
   overflow-x:hidden;
   height:200px;
-  min-width: 300px;
+  min-width: 350px;
 }
 
-li div p {
+/* review header  */
+.collapsible-header p {
   font-size: 12px;
-  line-height: 120%;
+  line-height: 130%;
   padding: 0px;
 }
 
+/* review body  */
 .collapsible-body p {
+  font-size: 12px;
   padding: 10px;
   line-height: 140%;
+}
+
+.ratingStars {
+  max-height: 14px;
+  float: right;
 }
