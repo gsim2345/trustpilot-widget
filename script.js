@@ -16,8 +16,12 @@ var starRatingPics = ['1-star-260x48.png', '2-stars-260x48.png', '3-stars-260x48
           var picIndex = obj.starRating - 1;
           var userPicFirst = obj.firstName.toLowerCase();
           var userPicLast = obj.lastName.toLowerCase();
-          var userPic = userPicFirst + '-' + userPicLast + '.png';
-          console.log(userPic);
+          var userPic;
+          if (obj.lastName.length === 0) {
+            userPic = userPicFirst + '.png';
+          } else {
+            userPic = userPicFirst + '-' + userPicLast + '.png';
+          }
           $('.collapsible').append('<li><div class="collapsible-header"><i class="material-icons"><img class="userImage" src="' + userPic + '"></i><p>' + obj.fullName + '<img  class="ratingStars" src="' + starRatingPics[picIndex] + '"><br/>   <b>' + obj.reviewTitle + '</b></p></div><div class="collapsible-body"><p>' + obj.reviewBody + '</p></div></li>');
       });
 
