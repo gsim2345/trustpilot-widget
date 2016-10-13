@@ -2,13 +2,8 @@ body {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
-.wrapper {
-  height: 500px;
-  width: 300px;
-}
-
 /* logo on top of widget */
-#logo {
+.trustpilotWrapper .logo {
   max-width: 150px;
   max-heigth: 30px;
   height: auto;
@@ -18,7 +13,7 @@ body {
 }
 
 /* rating stars on top of widget */
-#rating {
+.trustpilotWrapper .rating {
   max-width: 38%;
   max-height: 30px;
   height: auto;
@@ -28,7 +23,7 @@ body {
 }
 
 /* div containing the reviews */
-#reviews {
+.trustpilotWrapper .reviews {
   margin-top: 0px;
   overflow-y:scroll;
   overflow-x:hidden;
@@ -37,18 +32,18 @@ body {
 }
 
 /* review header  */
-.collapsible-header p {
+.trustpilotWrapper .reviews .collapsible .collapsible-header p {
   font-size: 12px;
   line-height: 130%;
   padding: 0px;
 }
 
-.userImage {
+.trustpilotWrapper .reviews .collapsible  .userImage {
   width: 99%;
 border-radius: 50%;
 }
 
-.ratingStars {
+.trustpilotWrapper .reviews .collapsible .ratingStars {
   width: 30%;
   max-width: 152px;
   height: auto;
@@ -58,13 +53,8 @@ border-radius: 50%;
 }
 
 /* review body  */
-.collapsible-body p {
+.trustpilotWrapper .reviews .collapsible .collapsible-body p {
   font-size: 12px;
-
-
-
-
-
   padding: 10px;
   line-height: 140%;
 }
