@@ -14,19 +14,20 @@ var starRatingPics = ['1-star-260x48.png', '2-stars-260x48.png', '3-stars-260x48
         // Add as much list element as many is in the json array.
         data.forEach(function(obj) {
           var picIndex = obj.starRating - 1;
-          var userPicFirst = obj.firstName.toLowerCase();
-          var userPicLast = obj.lastName.toLowerCase();
+          var userPicFirstName = obj.firstName.toLowerCase();
+          var userPicLastName = obj.lastName.toLowerCase();
           var userPic;
           if (obj.lastName.length === 0) {
-            userPic = userPicFirst + '.png';
+            userPic = userPicFirstName + '.png';
           } else {
-            userPic = userPicFirst + '-' + userPicLast + '.png';
+            userPic = userPicFirstName + '-' + userPicLastName + '.png';
           }
+          // Adding the collapsible table data
           $('.collapsible').append('<li><div class="collapsible-header"><i class="material-icons"><img class="userImage" src="' + userPic + '"></i><p>' + obj.fullName + '<img  class="ratingStars" src="' + starRatingPics[picIndex] + '"><br/>   <b>' + obj.reviewTitle + '</b></p></div><div class="collapsible-body"><p>' + obj.reviewBody + '</p></div></li>');
       });
-
     })
     .fail(function(xhr, status, error) {
-      console.log(status);
+      // in case we don't get data from our json file
+        $('.collapsible').append('<li><div class="collapsible-header"><i class="material-icons">report_problem</i><p><b>Oops, something unexpected happenned. We can\'t get data from the database. </b></p></div></li>');
     });
 });
