@@ -1,60 +1,70 @@
 body {
-  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
+
 
 /* logo on top of widget */
+
 .trustpilotWrapper .logo {
-  max-width: 150px;
-  max-heigth: 30px;
-  height: auto;
-  float: left;
-  width: 40%;
-  margin-left: 10px;
+    max-width: 150px;
+    max-heigth: 30px;
+    height: auto;
+    float: left;
+    width: 40%;
+    margin-left: 10px;
 }
+
 
 /* rating stars on top of widget */
+
 .trustpilotWrapper .rating {
-  max-width: 38%;
-  max-height: 30px;
-  height: auto;
-  float: right;
-  margin-right: 20px;
-  margin-bottom: 10px;
+    max-width: 38%;
+    max-height: 30px;
+    height: auto;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
+
 
 /* div containing the reviews */
+
 .trustpilotWrapper .reviews {
-  margin-top: 0px;
-  overflow-y:scroll;
-  overflow-x:hidden;
-  height:200px;
-  clear: both;
+    margin-top: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 200px;
+    clear: both;
 }
+
 
 /* review header  */
+
 .trustpilotWrapper .reviews .collapsible .collapsible-header p {
-  font-size: 12px;
-  line-height: 130%;
-  padding: 0px;
+    font-size: 12px;
+    line-height: 130%;
+    padding: 0px;
 }
 
-.trustpilotWrapper .reviews .collapsible  .userImage {
-  width: 99%;
-border-radius: 50%;
+.trustpilotWrapper .reviews .collapsible .userImage {
+    width: 99%;
+    border-radius: 50%;
 }
 
 .trustpilotWrapper .reviews .collapsible .ratingStars {
-  width: 30%;
-  max-width: 152px;
-  height: auto;
-  float: right;
-  padding-right: 3px;
-  max-height: 28px;
+    width: 30%;
+    max-width: 152px;
+    height: auto;
+    float: right;
+    padding-right: 3px;
+    max-height: 28px;
 }
 
+
 /* review body  */
+
 .trustpilotWrapper .reviews .collapsible .collapsible-body p {
-  font-size: 12px;
-  padding: 10px;
-  line-height: 140%;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 140%;
 }
