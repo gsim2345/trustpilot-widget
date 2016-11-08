@@ -22,7 +22,19 @@ $(document).ready(function() {
                     userPic = userPicFirstName + '-' + userPicLastName + '.png';
                 }
                 /** Adding the collapsible table data */
-                $('.collapsible').append('<li><div class="collapsible-header"><i class="material-icons"><img class="userImage" src="images/' + userPic + '"></i><p>' + obj.fullName + '<img  class="ratingStars" src="images/' + starRatingPics[picIndex] + '"><br/>   <b>' + obj.reviewTitle + '</b></p></div><div class="collapsible-body"><p>' + obj.reviewBody + '</p></div></li>');
+                var collapsibleTableData = [
+                  '<li>',
+                    '<div class="collapsible-header">',
+                      '<i class="material-icons"><img class="userImage" src="images/' + userPic + '"></i>',
+                      '<p>' + obj.fullName + '<img  class="ratingStars" src="images/' + starRatingPics[picIndex] + '"><br/>   <b>' + obj.reviewTitle + '</b></p>',
+                    '</div>',
+                    '<div class="collapsible-body">',
+                      '<p>' + obj.reviewBody + '</p>',
+                    '</div>',
+                  '</li>'
+                ];
+                $('.collapsible').append(collapsibleTableData.join(''));
+
 
             });
         })
